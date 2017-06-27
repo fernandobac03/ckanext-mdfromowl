@@ -5,7 +5,7 @@ from ckanext.repeating import validators
 
 
 
-class RepeatingPlugin(p.SingletonPlugin):
+class MDfromowlPlugin(p.SingletonPlugin):
     p.implements(p.IValidators)
     p.implements(p.IConfigurer)
 
@@ -21,3 +21,6 @@ class RepeatingPlugin(p.SingletonPlugin):
             'repeating_text_output':
                 validators.repeating_text_output,
             }
+
+
+

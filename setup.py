@@ -4,15 +4,15 @@ import sys, os
 version = '0.0.1'
 
 setup(
-    name='ckanext-repeating',
+    name='ckanext-mdfromowl',
     version=version,
-    description="Repeating fields for CKAN",
+    description="Metadata properties from owl",
     long_description="""
     """,
     classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     keywords='',
-    author='Government of Canada',
-    author_email='Michel.Gendron@statcan.gc.ca',
+    author='UPM - OEG',
+    author_email='jfbaculima@delicias.dia.fi.upm.es',
     url='',
     license='MIT',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
@@ -25,6 +25,6 @@ setup(
     entry_points=\
     """
     [ckan.plugins]
-    repeating=ckanext.repeating.plugins:RepeatingPlugin
+    mdfromowl=ckanext.repeating.plugins:MDfromowlPlugin
     """,
 )
