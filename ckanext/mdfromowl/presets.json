@@ -1,7 +1,7 @@
 {
-  "scheming_presets_version": 1,
-  "about": "scheming presets for repeating fields",
-  "about_url": "http://github.com/open-data/ckanext-mdfromowl",
+  "owl_presets_version": 1,
+  "about": "propierties from an owl file",
+  "about_url": "https://github.com/fernandobac03/ckanext-mdfromowl",
   "presets": [
     {
         
