@@ -9,6 +9,12 @@ class MDfromowlPlugin(p.SingletonPlugin):
     p.implements(p.IValidators)
     p.implements(p.IConfigurer)
 
+    def get_helpers(self):
+    	data=[]
+	data.append({'aa':'11'})
+	data.append({'bb':'22'})
+	return { 'dataowl': data,}
+
     def update_config(self, config):
         """
         templates

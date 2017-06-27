@@ -24,6 +24,18 @@ not used as a form_snippet directly #}
             <option value="{{ organization.id }}" {% if selected_org %} selected="selected" {% endif %}>{{ organization.display_name }}</option>
           {% endfor %}
         </select>
+
+<select id="selecting_schemas" name="selecting_schemas" data-module="autocomplete">
+		<!--{% if h.check_config_permission('create_unowned_dataset') %}
+             		<option value="" {% if not selected_org and data.id %} selected="selected" {% endif %}>{{ _('No organization') }}</option>
+          	{% endif %} -->
+          	{% for package in dataowl %}
+            	{# listing available properties #}
+            		<option value="{{ package }}">{{ package }}</option>
+          	{% endfor %}
+  	</select>
+</div>
+
       <!--</div>  -->
   {% endcall %}
 {% endmacro %}
