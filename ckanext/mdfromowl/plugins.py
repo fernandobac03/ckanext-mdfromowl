@@ -11,7 +11,7 @@ class MDfromowlPlugin(p.SingletonPlugin):
 
     def update_config(self, config):
         """
-        
+        templates
         """
         add_template_directory(config, 'templates')
 
