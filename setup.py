@@ -25,6 +25,6 @@ setup(
     entry_points=\
     """
     [ckan.plugins]
-    mdfromowl=ckanext.repeating.plugins:MDfromowlPlugin
+    mdfromowl=ckanext.mdfromowl.plugins:MDfromowlPlugin
     """,
 )

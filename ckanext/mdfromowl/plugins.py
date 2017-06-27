@@ -11,7 +11,7 @@ class MDfromowlPlugin(p.SingletonPlugin):
 
     def update_config(self, config):
         """
-        We have some form snippets that support ckanext-scheming
+        
         """
         add_template_directory(config, 'templates')
 
