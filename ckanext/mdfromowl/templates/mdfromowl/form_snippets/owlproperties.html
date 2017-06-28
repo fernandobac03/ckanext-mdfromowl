@@ -14,7 +14,7 @@
   {% snippet "mdfromowl/form_snippets/_owlproperties_select.html",
     field=field,
     data=data,
-    dataowl=dataowl,
+    dataowl=h.dataowl,
     errors=errors,
     organizations_available=h.organizations_available('create_dataset'),
     org_required=not h.check_config_permission('create_unowned_dataset')
